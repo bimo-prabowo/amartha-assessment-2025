@@ -1,0 +1,22 @@
+{
+  "name": "amartha-assessment-2025",
+  "version": "1.0.0",
+  "description": "Amartha Assessment 2025",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bimo-prabowo/amartha-assessment-2025.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bimo-prabowo/amartha-assessment-2025/issues"
+  },
+  "homepage": "https://github.com/bimo-prabowo/amartha-assessment-2025#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.6"
+  }
+}
