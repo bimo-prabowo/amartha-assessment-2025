@@ -36,3 +36,26 @@ test('Test Case #1', async ({ page }) => {
     expect(page.locator('[data-test="inventory-item-desc"]').textContent).toBe(itemDescription);
     expect(page.locator('[data-test="inventory-item-price"]').textContent).toBe(itemPrice);
 });
+
+test('Test Case #2', async ({ page }) => {
+    // Open test site
+    await page.goto('/');
+
+    // Set credentials
+    await page.locator('[data-test="username"]').fill(process.env.SAUCEDEMO_USER);
+    await page.locator('[data-test="password"]').fill(process.env.SAUCEDEMO_PASSWORD);
+
+    // Click Login button
+    await page.locator('[data-test="login-button"]').click();
+
+    // Expect login to be successful
+    await expect(page).toHaveURL('/inventory.html');
+    expect(page.locator('[data-test="title"]')).toHaveText("Products");
+
+    // Click on top left hamburger button
+
+    // Navigate to about
+
+    // Verify navigation
+    
+});
