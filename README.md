@@ -23,13 +23,30 @@ Ensure you have the following installed:
 
 ## Getting Started
 
-### 1. Install Dependencies
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/bimo-prabowo/amartha-assessment-2025.git
+cd amartha-assessment-2025
+
+```
+
+### 2. Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 2. Run Tests
+### 3. Configure Environment Variables
+
+Create a `.env` file in the root directory to store sensitive information, such as credentials. Example:
+
+```
+USERNAME=standard_user
+PASSWORD=secret_sauce
+```
+
+### 4. Run Tests
 
 Run all tests:
 
@@ -43,7 +60,7 @@ Run tests in Playwright UI mode:
 npm run test:ui
 ```
 
-### 3. Show Test Report
+### 5. Show Test Report
 
 Show Playwright HTML test run report:
 
@@ -51,7 +68,7 @@ Show Playwright HTML test run report:
 npm run report
 ```
 
-### 4. Lint Code
+### 6. Lint Code
 
 Check code for linting errors:
 
