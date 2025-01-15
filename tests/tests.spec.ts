@@ -53,9 +53,12 @@ test('Test Case #2', async ({ page }) => {
     expect(page.locator('[data-test="title"]')).toHaveText("Products");
 
     // Click on top left hamburger button
+    await page.getByRole('button', { name: 'Open Menu' }).click();
 
     // Navigate to about
+    await page.locator('[data-test="about-sidebar-link"]').click(); 
 
     // Verify navigation
+    await expect(page).toHaveURL('https://saucelabs.com/');
     
 });
