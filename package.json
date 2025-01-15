@@ -4,7 +4,7 @@
   "description": "Amartha Assessment 2025",
   "main": "index.js",
   "scripts": {
-    "lint": "npx eslint .",
+    "lint": "npx eslint tests/",
     "test": "npx playwright test",
     "test:ui": "npx playwright test --ui"
   },

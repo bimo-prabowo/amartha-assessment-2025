@@ -5,8 +5,8 @@ test('Automate login flow', async ({ page }) => {
     await page.goto('/');
 
     // Set credentials
-    await page.locator('[data-test="username"]').fill("standard_user");
-    await page.locator('[data-test="password"]').fill("secret_sauce");
+    await page.locator('[data-test="username"]').fill(process.env.SAUCEDEMO_USER);
+    await page.locator('[data-test="password"]').fill(process.env.SAUCEDEMO_PASSWORD);
 
     // Click Login
     await page.locator('[data-test="login-button"]').click();
