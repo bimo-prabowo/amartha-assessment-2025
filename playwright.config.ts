@@ -35,7 +35,10 @@ export default defineConfig({
     trace: 'on-first-retry',
   },
 
-  /* Configure project for chromium */
+/**
+ * Configure project for chromium
+ * See https://playwright.dev/docs/browsers#run-tests-on-different-browsers.
+ */
   projects: [
     {
       name: 'chromium',
