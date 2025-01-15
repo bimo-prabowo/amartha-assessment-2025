@@ -37,6 +37,12 @@ Run all tests:
 npm run test
 ```
 
+Run tests in Playwright UI mode:
+
+```bash
+npm run test:ui
+```
+
 ### 3. Show Test Report
 
 Show Playwright HTML test run report:
