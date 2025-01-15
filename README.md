@@ -37,7 +37,15 @@ Run all tests:
 npm run test
 ```
 
-### 3. Lint Code
+### 3. Show Test Report
+
+Show Playwright HTML test run report:
+
+```bash
+npm run report
+```
+
+### 4. Lint Code
 
 Check code for linting errors:
 
