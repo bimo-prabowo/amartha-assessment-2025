@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 test('Automate login flow', async ({ page }) => {
     // Open test site
-    await page.goto('https://www.saucedemo.com/');
+    await page.goto('/');
 
     // Set credentials
     await page.locator('[data-test="username"]').fill("standard_user");
@@ -12,5 +12,5 @@ test('Automate login flow', async ({ page }) => {
     await page.locator('[data-test="login-button"]').click();
 
     // Expect to be successful
-    expect(page.url()).toBe("https://www.saucedemo.com/inventory.html")
+    await expect(page).toHaveURL('/inventory.html');
 });
