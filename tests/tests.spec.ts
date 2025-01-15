@@ -14,6 +14,7 @@ test.beforeEach(async ({page}) => {
 
     // Expect login to be successful
     await expect(page).toHaveURL('/inventory.html');
+    expect(page.locator('[data-test="title"]')).toBeInViewport();
     expect(page.locator('[data-test="title"]')).toHaveText("Products");
 });
 
@@ -31,6 +32,7 @@ test('Test Case #1', async ({ page }) => {
 
     // Expect page redirection to cart
     await expect(page).toHaveURL('/cart.html');
+    expect(page.locator('[data-test="title"]')).toBeInViewport();
     expect(page.locator('[data-test="title"]')).toHaveText("Your Cart");
 
     // Verify item in cart
@@ -49,5 +51,8 @@ test('Test Case #2', async ({ page }) => {
 
     // Verify navigation
     await expect(page).toHaveURL('https://saucelabs.com/');
-    
+    await expect(page.getByRole('link', { name: 'Saucelabs' })).toBeInViewport();
+    await expect(page.getByText('The world relies on your code')).toBeInViewport();
+    await expect(page.getByRole('img', { name: 'Scroll down' })).toBeInViewport();
+    await expect(page.locator('[id="__next"] svg').nth(1)).toBeInViewport();
 });
