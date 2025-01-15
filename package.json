@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "npx eslint tests/",
     "test": "npx playwright test",
-    "test:ui": "npx playwright test --ui"
+    "test:ui": "npx playwright test --ui",
+    "report": "npx playwright show-report"
   },
   "repository": {
     "type": "git",
