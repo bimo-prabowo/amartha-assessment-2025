@@ -4,6 +4,7 @@
   "description": "Amartha Assessment 2025",
   "main": "index.js",
   "scripts": {
+    "lint": "npx eslint .",
     "test": "npx playwright test",
     "test:ui": "npx playwright test --ui"
   },
@@ -19,7 +20,11 @@
   },
   "homepage": "https://github.com/bimo-prabowo/amartha-assessment-2025#readme",
   "devDependencies": {
+    "@eslint/js": "^9.18.0",
     "@playwright/test": "^1.49.1",
-    "@types/node": "^22.10.6"
+    "@types/node": "^22.10.6",
+    "eslint": "^9.18.0",
+    "globals": "^15.14.0",
+    "typescript-eslint": "^8.20.0"
   }
 }
